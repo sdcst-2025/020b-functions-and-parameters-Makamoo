@@ -9,9 +9,18 @@ Return the missing side
 assert hypotenuse(3,4,True) == 5
 (2 points)
 """
-
-def hypotenuse():
-    return
+import math
+def hypotenuse(b,c,a):
+    if a is True:
+        A = math.sqrt(b**2 +c**2)
+        return(A)
+    elif a is False:
+        if b > c:
+            d = math.sqrt(b**2 - c**2)
+            return(d)
+        elif c > b:
+            d = math.sqrt(c**2 - b**2)
+            return(d)
 
 if __name__ == "__main__":
     assert hypotenuse(3,4,True) == 5

@@ -10,8 +10,16 @@ Example: The factors of 10 are 1, 2, 5, 10
 """
 
 def factors(x):
-    l = []
-    return l
+    tiger = []
+    for i in range(x):
+        i = i + 1
+        R = x/i
+        T = int(R)
+        S = float(T)
+        if R == S:
+            tiger.append(i)
+    
+    return tiger
 
 if __name__ == "__main__":
     n = factors(10)

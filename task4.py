@@ -6,9 +6,17 @@ Return True if the number is an integer
 Return False if the number is not an integer
 (2 points)
 """
-
-def isInteger():
-    return
+import math
+def isInteger(x):
+  try:
+    f = math.floor(x)
+    if x == f:
+      return(True)
+    else:
+      return(False)
+  except:
+    N = "False" 
+  return(False)
 
 if __name__ == "__main__":
   assert isInteger( 9.5 ) == False
